@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pants on Fire</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <!-- This popup is opened only after the collection attempt finishes. -->
+    <main id="outcome" hidden>
+      <header><span class="brand-mark" aria-hidden="true">P</span> Pants on Fire</header>
+      <p class="eyebrow" id="verdict">COMPLETED CHECK</p>
+      <h1 id="outcome-title"></h1>
+      <p id="outcome-message" role="status"></p>
+      <ul id="evidence"></ul>
+      <p class="privacy">Image reuse does not establish manufacturing origin. Searches cover Google's returned results, not every marketplace listing. Public image URLs are sent to Google; marketplace pages are opened for verification.</p>
+      <button id="close" type="button">Close</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

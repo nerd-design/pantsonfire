@@ -1,0 +1,25 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #173b30;
+  background: #faf9f4;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { width: 388px; margin: 0; }
+main { padding: 24px; }
+[hidden] { display: none !important; }
+header { display: flex; align-items: center; gap: 10px; font-weight: 750; }
+.brand-mark {
+  display: grid; place-items: center; width: 32px; height: 32px;
+  background: #176a50; color: white; border-radius: 9px;
+}
+.eyebrow { font-size: 10px; letter-spacing: .1em; margin: 26px 0 8px; color: #876446; }
+h1 { font-size: 21px; line-height: 1.25; margin: 0 0 12px; }
+p { font-size: 13px; line-height: 1.6; }
+.privacy { font-size: 11px; color: #68786f; margin-top: 20px; }
+button {
+  width: 100%; padding: 10px; margin-top: 10px; font: inherit; font-size: 13px;
+  border: 0; border-radius: 7px; background: #176a50; color: white; cursor: pointer;
+}
+button:hover { background: #0f523d; }
+button:focus-visible { outline: 3px solid #87bda4; outline-offset: 3px; }

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Pants on Fire",
+  "version": "1.2.0",
+  "minimum_chrome_version": "127",
+  "description": "Check page images using Google Lens and compare photos on foreign marketplaces. Experimental, no API key required.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Pants on Fire — check this page's images"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self' data: blob: https: http:"
+  }
+}
